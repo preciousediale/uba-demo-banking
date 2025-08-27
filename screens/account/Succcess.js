@@ -1,13 +1,8 @@
 // screens/Dashboard.js
 import React, { useRef, useState } from 'react';
-import { View, Image, Text, ImageBackground, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import bgImage from '../../assets/background.jpg';
-import redbg from '../../assets/redbg.jpg';
+import { View, Image, Text, ImageBackground, TouchableOpacity} from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faAngleLeft, faArrowLeft, faBell, faCheckCircle, faCopy, faDashboard, faDownload, faEye, faEyeSlash, faHistory, faLightbulb, faMoneyBill, faNewspaper, faPaperPlane, faPhone, faPlusCircle, faRefresh, faShareAlt, faTelevision, faWifi } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
+import { faCheckCircle, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigation } from '@react-navigation/native';
 import Header from '../../components/Header';
 
@@ -63,9 +58,6 @@ const Success = () => {
                                     <Text className="text-gray-500 text-xs mt-4">Bank</Text>
                                     <Text className="font-calsans text-base">Moniepoint</Text>
 
-
-
-
                                 </View>
 
                                 <View className="flex items-center mt-4">
@@ -75,6 +67,13 @@ const Success = () => {
                                         </Text>
                                         <FontAwesomeIcon icon={faShareAlt} color="#ffffff" />
                                     </TouchableOpacity>
+
+                                     <TouchableOpacity
+                                                          className="bg-red-700 py-2 px-20 mt-2 rounded items-center"
+                                                          onPress={()=>navigation.replace('Dashboard')}
+                                                        >
+                                                          <Text className="text-white text-base font-varela">Close</Text>
+                                                        </TouchableOpacity>
                                 </View>
 
                             </View>

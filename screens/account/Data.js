@@ -1,12 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { View, Image, Text, ImageBackground, TouchableOpacity, ScrollView, Dimensions, TextInput, Animated } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { View, Text, ImageBackground, TouchableOpacity, Dimensions, TextInput, Animated } from 'react-native';
 import bgImage from '../../assets/background.jpg';
 import redbg from '../../assets/redbg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faAngleLeft, faArrowLeft, faBell, faCopy, faDashboard, faDownload, faEye, faEyeSlash, faHistory, faLightbulb, faMoneyBill, faNewspaper, faPaperPlane, faPhone, faPlusCircle, faRefresh, faShareAlt, faTelevision, faTimesCircle, faWifi } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
+import {faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import { useNavigation } from '@react-navigation/native';
 import FormField from '../../components/FormField';
 import Header from '../../components/Header';
@@ -14,7 +11,7 @@ import Dropdown from '../../components/Dropdown';
 
 
 
-const Airtime = () => {
+const Data= () => {
     const navigation = useNavigation();
     const [isToggled, setIsToggled] = useState(false);
 
@@ -200,4 +197,4 @@ const Airtime = () => {
     );
 };
 
-export default Airtime;
+export default Data;

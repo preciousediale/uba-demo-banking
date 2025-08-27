@@ -1,10 +1,9 @@
 // screens/Register.js
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Dimensions, SafeAreaView, ImageBackground } from 'react-native';
+import { View, Text, TouchableOpacity, Dimensions, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../assets/logo.png'
 import bgImage from '../assets/background.jpg';
 import FormField from '../components/FormField';
 const { width } = Dimensions.get('window');

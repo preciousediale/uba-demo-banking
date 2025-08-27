@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { View, Image, Text, ImageBackground, TouchableOpacity,Dimensions, TextInput, Animated } from 'react-native';
+import { View, Text, ImageBackground, TouchableOpacity,Dimensions, TextInput, Animated } from 'react-native';
 import bgImage from '../../assets/background.jpg';
-import redbg from '../../assets/redbg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { useNavigation } from '@react-navigation/native';
 import FormField from '../../components/FormField';
@@ -13,8 +12,6 @@ import Dropdown from '../../components/Dropdown';
 
 const Airtime = () => {
     const navigation = useNavigation();
-    const [isToggled, setIsToggled] = useState(false);
-
     const [showLoginPopup, setShowLoginPopup] = useState(false);
 
     const slideAnim = useRef(new Animated.Value(Dimensions.get('window').height)).current;

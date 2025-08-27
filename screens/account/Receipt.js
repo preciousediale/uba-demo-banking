@@ -1,13 +1,9 @@
 // screens/Dashboard.js
 import React, { useRef, useState } from 'react';
-import { View, Image, Text, ImageBackground, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import bgImage from '../../assets/background.jpg';
-import redbg from '../../assets/redbg.jpg';
+import { View, Image, Text, ImageBackground, TouchableOpacity, ScrollView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faAngleLeft, faArrowLeft, faBell, faCopy, faDashboard, faDownload, faEye, faEyeSlash, faHistory, faLightbulb, faMoneyBill, faNewspaper, faPaperPlane, faPhone, faPlusCircle, faRefresh, faShareAlt, faTelevision, faWifi } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
+import { faCopy, faShareAlt} from '@fortawesome/free-solid-svg-icons';
+
 import { useNavigation } from '@react-navigation/native';
 import Header from '../../components/Header';
 
@@ -24,6 +20,7 @@ const Receipt = () => {
 
 
             <View className="flex-1 bg-white rounded-3xl -mt-6 ">
+                <ScrollView>
                 <View className="p-6 my-2 mb-12 flex-1">
                     <View>
 
@@ -114,6 +111,8 @@ const Receipt = () => {
                                         </Text>
                                         <FontAwesomeIcon icon={faShareAlt} color="#ffffff" />
                                     </TouchableOpacity>
+
+                                    
                                 </View>
 
                             </View>
@@ -121,7 +120,7 @@ const Receipt = () => {
                     </View>
 
                 </View>
-
+                </ScrollView>
             </View>
 
 

@@ -12,8 +12,6 @@ import Dropdown from '../../components/Dropdown';
 
 const SendMoney = () => {
     const navigation = useNavigation();
-    const [isToggled, setIsToggled] = useState(false);
-
     const [showLoginPopup, setShowLoginPopup] = useState(false);
 
     const slideAnim = useRef(new Animated.Value(Dimensions.get('window').height)).current;

@@ -1,11 +1,8 @@
-// screens/Dashboard.js
 import React, { useRef, useState } from 'react';
-import { View, Image, Text, ImageBackground, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { View, Text, ImageBackground, TouchableOpacity} from 'react-native';
 import bgImage from '../../assets/background.jpg';
-import redbg from '../../assets/redbg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faAngleLeft, faArrowLeft, faBell, faCheckCircle, faCopy, faDashboard, faDownload, faEye, faEyeSlash, faHistory, faLightbulb, faMoneyBill, faNewspaper, faPaperPlane, faPhone, faPlusCircle, faRefresh, faShareAlt, faTelevision, faWifi } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faPhone, faTelevision, faWifi } from '@fortawesome/free-solid-svg-icons';
 
 import { useNavigation } from '@react-navigation/native';
 import Header from '../../components/Header';

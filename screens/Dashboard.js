@@ -109,7 +109,7 @@ const Dashboard = () => {
                                   <Text className="text-white text-sm font-varela">2046235454</Text>
                                   <FontAwesomeIcon icon={faCopy} size={14} color="#FFFFFF" />
                                 </View>
-                                <Text className="text-white text-sm font-varela">Current Account</Text>
+                                <Text className="text-white text-xs font-varela">Current Account</Text>
                               </View>
                               <Text className="text-white text-sm font-varela">Account {index + 1}</Text>
                               <View className="flex-row items-center space-x-1">
@@ -121,10 +121,10 @@ const Dashboard = () => {
                                 <Text className="text-white font-varela">NGN</Text>
                                 <Text className="text-white text-xl font-calsans">{`${showBalance ? 'XXXXXXXX' : '250,000,000'}`}</Text>
                                 <TouchableOpacity onPress={() => setShowBalance(!showBalance)}>
-                                  {!showBalance ? <FontAwesomeIcon icon={faEyeSlash} size={14} color="#FFFFFF" /> : <FontAwesomeIcon icon={faEye} size={14} color="#FFFFFF" />}
+                                  {!showBalance ? <FontAwesomeIcon icon={faEyeSlash} size={20} color="#FFFFFF" /> : <FontAwesomeIcon icon={faEye} size={10} color="#FFFFFF" />}
                                 </TouchableOpacity>
                               </View>
-                              <FontAwesomeIcon icon={faRefresh} size={14} color="#FFFFFF" />
+                              <FontAwesomeIcon icon={faRefresh} size={16} color="#FFFFFF" />
                             </View>
                           </ImageBackground>
                         </View>
@@ -149,19 +149,19 @@ const Dashboard = () => {
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faPaperPlane} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Send Money</Text>
+                      <Text className="text-xs">Send Money</Text>
                     </TouchableOpacity>
                     <TouchableOpacity className="bg-white rounded-xl p-3 flex-1 flex items-center space-y-2" onPress={() => navigation.navigate('Bills')}>
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faNewspaper} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Pay Bills</Text>
+                      <Text className="text-xs">Pay Bills</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Transactions')} className="bg-white rounded-xl p-3 flex-1 flex items-center space-y-2">
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faDashboard} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Transactions</Text>
+                      <Text className="text-xs">Transactions</Text>
                     </TouchableOpacity>
                   </View>
 
@@ -336,19 +336,19 @@ const Dashboard = () => {
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faPaperPlane} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Send Money</Text>
+                      <Text className="text-xs">Send Money</Text>
                     </TouchableOpacity>
                     <TouchableOpacity className="bg-white rounded-xl p-3 flex-1 flex items-center space-y-2">
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faNewspaper} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Statement</Text>
+                      <Text className="text-xs">Statement</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Transactions')} className="bg-white rounded-xl p-3 flex-1 flex items-center space-y-2">
                       <View className="bg-red-100 p-2 rounded-xl">
                         <FontAwesomeIcon icon={faDashboard} size={20} color="#B91C1C" />
                       </View>
-                      <Text className="text-sm">Transactions</Text>
+                      <Text className="text-xs">Transactions</Text>
                     </TouchableOpacity>
                   </View>
 
@@ -466,7 +466,7 @@ const Dashboard = () => {
 
               
               
-              <TouchableOpacity  onPress={()=>navigation.navigate('Auth')} className="py-3 mt-2 pb-4 flex-row justify-between border-b border-red-700">
+              <TouchableOpacity  onPress={()=>navigation.replace('Auth')} className="py-3 mt-2 pb-4 flex-row justify-between border-b border-red-700">
                 <Text className="text-base font-varela">Logout</Text>
                 <FontAwesomeIcon icon={faAngleRight} size={18}/>
               </TouchableOpacity>

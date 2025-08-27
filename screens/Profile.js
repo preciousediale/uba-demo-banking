@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Image, Text, ImageBackground, TouchableOpacity} from 'react-native';
 import bgImage from '../assets/background.jpg';
-
 import { useNavigation } from '@react-navigation/native';
 import Header from '../components/Header';
 
